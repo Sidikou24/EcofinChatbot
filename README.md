@@ -1,8 +1,8 @@
-Description:
+## Description:
 Le projet est une application web Python basée sur Flask qui scrape des articles du site Ecofin, les transforme en système de recherche basé sur les embeddings, et répond
 aux questions des utilisateurs en utilisant un modèle d'intelligence artificielle.
 
-Fonctionnalités principales
+## Fonctionnalités principales
 - Scraping des derniers articles du site Ecofin.
 - Stockage des articles dans un fichier JSON.
 - Recherche d'articles pertinents à l'aide de FAISS et des embeddings LangChain.
@@ -33,16 +33,15 @@ HiringChallenge/
 ├── .gitignore               # Fichiers/dossiers à exclure du dépôt.
 
 
-##Installation
+## Installation
 Pré-requis
 - Python 3.11.5
 - Environnement virtuel Python (Recommandé)
 
-Instructions de configuration
+## Instructions de configuration
 1. Clonez le dépôt :
    git clone https://github.com/Sidikou24/EcofinChatbot.git
    cd HiringChallenge
-  
 
 2. Créez et activez un environnement virtuel (avec conda ou pip):
    (Perso avec conda)
@@ -52,12 +51,11 @@ Instructions de configuration
 3. Installez les dépendances (parfois il est necessaire d'installer les dépendances une par une) :
    pip install -r requierments.txt
    
-
 4. Configurez les variables d'environnement dans un fichier `.env` :
    USER_AGENT=VotreUserAgent
    API_KEY=VotreCleAPI (créez un compte 
 
-Utilisation
+## Utilisation
 Exécuter l’Application
 1. Lancez l'application Flask :
    python run.py
@@ -67,9 +65,7 @@ Exécuter l’Application
 
 3. Posez une question sur un des secteur couvert ou demandez simplement au chatbot "Comment peux tu m'aider?"
 
-
 ## Techniques
-
 Scraping
 Le fichier `ecofin_scrap.py` :
 - Utilise BeautifulSoup pour scraper les articles Ecofin.
@@ -79,7 +75,7 @@ Architecture Rag
 - Les articles sont convertis en embeddings avec LangChain et FAISS pour la recherche des passages pertinants.
 - Le modèle d'embedding utilisé est Google Generative AI.
 
-Architecture
+Architecture web
 - Front-end : HTML/CSS/JS (dossier `templates` et `static`).
 - Back-end : Flask pour les routes et l’API.
 - Base de données vectorielle : FAISS pour les embeddings.
@@ -87,7 +83,7 @@ Architecture
 Exclusion Git
 Le fichier `.gitignore` contient les éléments générés automatiquement et le file .env qui contient les informations sensibles
 
-Contributeurs
+## Contributeurs
 - MAMANE DARI SIDIKOU (Auteur principal)
 
 ----------------------------------------------------------
