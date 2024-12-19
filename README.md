@@ -33,7 +33,7 @@ HiringChallenge/
 ├── .gitignore               # Fichiers/dossiers à exclure du dépôt.
 
 
-Installation
+##Installation
 Pré-requis
 - Python 3.11.5
 - Environnement virtuel Python (Recommandé)
@@ -68,7 +68,7 @@ Exécuter l’Application
 3. Posez une question sur un des secteur couvert ou demandez simplement au chatbot "Comment peux tu m'aider?"
 
 
-Techniques
+## Techniques
 
 Scraping
 Le fichier `ecofin_scrap.py` :
