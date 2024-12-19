@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Chatbot Ecofin</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2>Data354 - Ecofin Chatbot</h2>
+            <nav>
+                <ul>
+                    <li><a href="#">À propos</a></li>
+                    <li><a href="#">Fonctionnalités</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="chat" class="section">
+            <div class="container chat-container">
+                <div class="container-head" style="color:blue">
+                    <h3>Restez informer</h3>
+                </div>
+                <div class="chat-box" id="chat-box">
+                    <!-- Les échanges apparaîtront ici -->
+                </div>
+                <div class="input-container">
+                    <input type="text" id="user-input" placeholder="Posez votre question...">
+                    <button onclick="sendMessage()">Envoyer</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Data354. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

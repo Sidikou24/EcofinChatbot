@@ -1,0 +1,11 @@
+# Exclure les environnements virtuels
+ecofin/
+
+
+# Fichiers de configuration sensibles
+.env
+
+# Dir et Fichiers générés automatiquement
+data/
+*.faiss
+*.pkl
