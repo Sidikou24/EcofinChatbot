@@ -1,11 +1,11 @@
 ## Description:
-Le projet est une application web Python basée sur Flask qui scrape des articles du site Ecofin, les transforme en système de recherche basé sur les embeddings, et répond
-aux questions des utilisateurs en utilisant un modèle d'intelligence artificielle.
+Le projet est une application web Python basée sur Flask qui scrape des articles du site Ecofin, les transforme en système de recherche basé sur les embeddings, et répond aux questions des utilisateurs en utilisant un modèle d'intelligence artificielle.
 
 ## Fonctionnalités principales
 - Scraping des derniers articles du site Ecofin.
 - Stockage des articles dans un fichier JSON.
-- Recherche d'articles pertinents à l'aide de FAISS et des embeddings LangChain.
+- Recherche d'articles pertinents à l'aide de FAISS et des embeddings intégrés via LangChain.
+- Génération des réponses via le LLM Gemini.
 - Interface utilisateur construite avec Flask.
 
 ## Structure du Projet
@@ -52,7 +52,7 @@ Pré-requis
    pip install -r requierments.txt
    
 4. Configurez les variables d'environnement dans un fichier `.env` :
-   USER_AGENT=VotreUserAgent
+   USER_AGENT=VotreUserAgent (Identifiant utilisé lors des requêtes HTTP. Une Chaine de caractère valide)
    API_KEY=VotreCleAPI (Obtenez votre propre clé sur https://aistudio.google.com/app/apikey?hl=fr)
 
 ## Utilisation
@@ -74,6 +74,14 @@ Le fichier `ecofin_scrap.py` :
 Architecture Rag 
 - Les articles sont convertis en embeddings avec LangChain et FAISS pour la recherche des passages pertinants.
 - Le modèle d'embedding utilisé est models/embedding-001.
+  
+Configuration du modèle
+- Modèle : gemini-1.5-flash
+- Température : 0.7 (pour un équilibre entre créativité et précision)
+
+Traitement des données
+- Chunking : 380 caractères par segment
+- Chevauchement : 80 caractères
 
 Architecture web
 - Front-end : HTML/CSS/JS (dossier `templates` et `static`).
