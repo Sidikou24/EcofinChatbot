@@ -73,7 +73,7 @@ Le fichier `ecofin_scrap.py` :
 
 Architecture Rag 
 - Les articles sont convertis en embeddings avec LangChain et FAISS pour la recherche des passages pertinants.
-- Le modèle d'embedding utilisé est Google Generative AI.
+- Le modèle d'embedding utilisé est models/embedding-001.
 
 Architecture web
 - Front-end : HTML/CSS/JS (dossier `templates` et `static`).
