@@ -53,7 +53,7 @@ Pré-requis
    
 4. Configurez les variables d'environnement dans un fichier `.env` :
    USER_AGENT=VotreUserAgent
-   API_KEY=VotreCleAPI (créez un compte et obtenez 
+   API_KEY=VotreCleAPI (Obtenez votre propre clé sur https://aistudio.google.com/app/apikey?hl=fr)
 
 ## Utilisation
 Exécuter l’Application
