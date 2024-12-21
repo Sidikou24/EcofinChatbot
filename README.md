@@ -53,7 +53,7 @@ Pré-requis
    
 4. Configurez les variables d'environnement dans un fichier `.env` :
    USER_AGENT=VotreUserAgent
-   API_KEY=VotreCleAPI (créez un compte 
+   API_KEY=VotreCleAPI (créez un compte et obtenez 
 
 ## Utilisation
 Exécuter l’Application
@@ -80,8 +80,16 @@ Architecture web
 - Back-end : Flask pour les routes et l’API.
 - Base de données vectorielle : FAISS pour les embeddings.
 
+Gestion des erreurs
+-Le fichier ecofin_scrap.py intègre un système de gestion des erreurs robuste basé sur Python logging. 
+-Cela permet de suivre les activités, détecter les erreurs lors du scraping et des enregistrements JSON, et de prendre des actions correctives.
+
 Exclusion Git
 Le fichier `.gitignore` contient les éléments générés automatiquement et le file .env qui contient les informations sensibles
+
+Limitations connues
+-Les résultats dépendent des données disponibles dans les 10 derniers jours.
+-Le scraping peut échouer si le site web Ecofin change son architecture ou bloque les requêtes automatiques.
 
 ## Contributeurs
 - MAMANE DARI SIDIKOU (Auteur principal)
